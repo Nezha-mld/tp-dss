@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="neez.css"?>
+
+<curriculumVitae>
+    <!-- Informations personnelles -->
+    <informationsPersonnelles>
+        <nom>Miloudi</nom>
+        <prenom>Nezha</prenom>
+        <dateNaissance>08-05-2005</dateNaissance>
+        <adresse>
+            <rue>123 Rue Exemple</rue>
+            <ville>Oran</ville>
+            <codePostal>11111</codePostal>
+            <pays>Algérie</pays>
+        </adresse>
+        <telephone>+213 79****15</telephone>
+        <email>nazhamiloudi097@gmail.com</email>
+        <portfolio>https://nezha-mld.github.io/Mon-portfolio/</portfolio>
+    </informationsPersonnelles>
+
+    <!-- Objectif professionnel -->
+    <objectif>
+        Développeuse Web en début de carrière...
+    </objectif>
+
+    <!-- Formation académique -->
+    <formation>
+        <diplome>
+            <titre>Bachelor en Mathématique</titre>
+            <etablissement>Bachir Ibrahimi </etablissement>
+            <annee>2023</annee>
+            <mention>Bien</mention>
+        </diplome>
+        <diplome>
+            <titre>Licence en Informatique</titre>
+            <etablissement>Université Oran 1</etablissement>
+            <annee>2026</annee>
+            <mention></mention>
+        </diplome>
+    </formation>
+
+    <!-- Expérience professionnelle -->
+    <experience>
+        <poste>
+            <titre>Stagiaire Développement Web</titre>
+            <entreprise>Entreprise Exemple</entreprise>
+            <periode></periode>
+            <missions>
+                <mission>Création de pages web interactives en HTML, CSS et JavaScript</mission>
+            </missions>
+        </poste>
+    </experience>
+
+    <!-- Compétences
+    <competences>
+        <competence>
+            <nom>HTML</nom>
+            <niveau>Avancé</niveau>
+        </competence>
+        <competence>
+            <nom>CSS</nom>
+            <niveau>Avancé</niveau>
+        </competence>
+        <competence>
+            <nom>JavaScript</nom>
+            <niveau>Intermédiaire</niveau>
+        </competence>
+        <competence>
+            <nom>React.js</nom>
+            <niveau>Débutant</niveau>
+        </competence>
+    </competences>
+ -->
+  <!-- Ajouter un attribut "value" pour les niveaux de compétence -->
+<competence>
+    <nom>HTML</nom>
+    <niveau value="Avancé">Avancé</niveau>
+</competence>
+<competence>
+    <nom>CSS</nom>
+    <niveau value="Avancé">Avancé</niveau>
+</competence>
+<competence>
+    <nom>JavaScript</nom>
+    <niveau value="Intermédiaire">Intermédiaire</niveau>
+</competence>
+<competence>
+    <nom>React.js</nom>
+    <niveau value="Débutant">Débutant</niveau>
+</competence>
+    <!-- Langues -->
+    <langues>
+        <langue>
+            <nom>Français</nom>
+            <niveau>Courant</niveau>
+        </langue>
+        <langue>
+            <nom>Arabe</nom>
+            <niveau>Courant</niveau>
+        </langue>
+        <langue>
+            <nom>Anglais</nom>
+            <niveau>Intermédiaire</niveau>
+        </langue>
+    </langues>
+
+    <!-- Centres d'intérêt -->
+    <centresInteret>
+        <interet>Développement Web</interet>
+        <interet>Design UI/UX</interet>
+        <interet>...</interet>
+    </centresInteret>
+</curriculumVitae>

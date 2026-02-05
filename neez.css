@@ -1,0 +1,455 @@
+/* neez.css - Style corrigé pour CV XML */
+/* Version améliorée avec corrections fonctionnelles */
+
+/* Style global */
+curriculumVitae {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: block;
+}
+
+/* Style pour les titres de section */
+curriculumVitae > *:before {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #00080c;
+    margin: 30px 0 20px 0;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #4a6fa5;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+informationsPersonnelles:before {
+    content: "Informations Personnelles";
+    margin-top: 0;
+}
+
+objectif:before {
+    content: "Objectif Professionnel";
+}
+
+formation:before {
+    content: "Formation Académique";
+}
+
+experience:before {
+    content: "Expérience Professionnelle";
+}
+
+competences:before {
+    content: "Compétences";
+}
+
+langues:before {
+    content: "Langues";
+}
+
+centresInteret:before {
+    content: "Centres d'Intérêt";
+}
+
+/* En-tête avec informations personnelles */
+informationsPersonnelles {
+    display: block;
+    background: linear-gradient(135deg, #657da1 0%, #166088 100%);
+    color: white;
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+informationsPersonnelles > nom {
+    display: block;
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #ffd166;
+}
+
+informationsPersonnelles > prenom {
+    display: block;
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+informationsPersonnelles dateNaissance, 
+informationsPersonnelles telephone, 
+informationsPersonnelles email {
+    display: inline-block;
+    margin-right: 20px;
+    margin-top: 10px;
+    font-size: 0.95rem;
+}
+
+adresse {
+    display: block;
+    margin-top: 10px;
+    font-style: normal;
+}
+
+rue, ville, codePostal, pays {
+    display: inline;
+}
+
+rue:after {
+    content: ", ";
+}
+
+ville:after {
+    content: ", ";
+}
+
+codePostal:after {
+    content: ", ";
+}
+
+portfolio {
+    display: block;
+    margin-top: 15px;
+    color: #ffd166;
+}
+
+portfolio:before {
+    content: "Portfolio: ";
+    font-weight: bold;
+    color: #ffd166;
+}
+
+/* Objectif professionnel */
+objectif {
+    display: block;
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    border-left: 5px solid #4a6fa5;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+/* Formation */
+formation {
+    display: block;
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+diplome {
+    display: block;
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+    border-bottom: 1px dashed #eee;
+}
+
+diplome:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+diplome > titre {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+diplome > etablissement {
+    display: block;
+    font-size: 1.1rem;
+    color: #4a6fa5;
+    margin-bottom: 5px;
+}
+
+diplome > annee {
+    display: inline-block;
+    background-color: #e9f0f7;
+    color: #166088;
+    padding: 3px 10px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+diplome > mention {
+    display: inline-block;
+    margin-left: 10px;
+    font-style: italic;
+    color: #666;
+}
+
+/* Expérience professionnelle */
+experience {
+    display: block;
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+poste {
+    display: block;
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+    border-bottom: 1px dashed #eee;
+}
+
+poste:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+poste > titre {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+poste > entreprise {
+    display: block;
+    font-size: 1.1rem;
+    color: #4a6fa5;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+poste > periode {
+    display: block;
+    font-style: italic;
+    color: #777;
+    margin-bottom: 15px;
+}
+
+missions {
+    display: block;
+    margin-top: 15px;
+}
+
+mission {
+    display: block;
+    margin-bottom: 8px;
+    padding-left: 20px;
+    position: relative;
+}
+
+mission:before {
+    content: "•";
+    color: #4a6fa5;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
+/* Compétences */
+competences {
+    display: block;
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+competence {
+    display: inline-block;
+    background-color: #e9f0f7;
+    padding: 8px 15px;
+    margin: 0 10px 10px 0;
+    border-radius: 20px;
+    font-size: 0.95rem;
+}
+
+competence > nom {
+    display: inline;
+    font-weight: bold;
+    color: #166088;
+}
+
+competence > niveau {
+    display: inline;
+    margin-left: 8px;
+    padding: 2px 8px;
+    border-radius: 10px;
+    font-size: 0.85rem;
+    font-weight: bold;
+}
+
+/* Ciblage spécifique des niveaux */
+competence:has(niveau:contains("Avancé")) niveau {
+    background-color: #4caf50;
+    color: white;
+}
+
+competence:has(niveau:contains("Intermédiaire")) niveau {
+    background-color: #ff9800;
+    color: white;
+}
+
+competence:has(niveau:contains("Débutant")) niveau {
+    background-color: #f44336;
+    color: white;
+}
+
+/* Alternative si :has() n'est pas supporté */
+niveau[value="Avancé"] {
+    background-color: #4caf50 !important;
+    color: white !important;
+}
+
+niveau[value="Intermédiaire"] {
+    background-color: #ff9800 !important;
+    color: white !important;
+}
+
+niveau[value="Débutant"] {
+    background-color: #f44336 !important;
+    color: white !important;
+}
+
+/* Langues */
+langues {
+    display: block;
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+langue {
+    display: inline-block;
+    background-color: #f5f5f5;
+    padding: 10px 20px;
+    margin: 0 15px 15px 0;
+    border-radius: 8px;
+    min-width: 120px;
+    text-align: center;
+}
+
+langue > nom {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+langue > niveau {
+    display: block;
+    color: #4a6fa5;
+    font-weight: 500;
+    padding: 0;
+    margin: 0;
+}
+
+/* Centres d'intérêt */
+centresInteret {
+    display: block;
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+centresInteret > interet {
+    display: inline-block;
+    background-color: #ffd166;
+    color: #333;
+    padding: 8px 18px;
+    margin: 0 10px 10px 0;
+    border-radius: 20px;
+    font-weight: 500;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    curriculumVitae {
+        padding: 10px;
+    }
+    
+    informationsPersonnelles {
+        padding: 20px;
+    }
+    
+    informationsPersonnelles > nom,
+    informationsPersonnelles > prenom {
+        font-size: 1.8rem;
+    }
+    
+    informationsPersonnelles dateNaissance, 
+    informationsPersonnelles telephone, 
+    informationsPersonnelles email {
+        display: block;
+        margin-right: 0;
+    }
+    
+    competence, langue, interet {
+        margin: 0 5px 10px 0;
+    }
+    
+    /* Ajustement pour petits écrans */
+    formation, experience, competences, langues, centresInteret {
+        padding: 15px;
+    }
+}
+
+/* Animation pour les sections */
+formation, experience, competences, langues, centresInteret, objectif {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+formation:hover, experience:hover, competences:hover, 
+langues:hover, centresInteret:hover, objectif:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* Style pour les liens (si le navigateur supporte les liens dans XML) */
+portfolio {
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+/* Correction pour les sections vides ou incomplètes */
+periode:empty:before {
+    content: "Non spécifié";
+    color: #999;
+    font-style: italic;
+}
+
+mention:empty {
+    display: none;
+}
+
+/* Amélioration de la lisibilité */
+* {
+    box-sizing: border-box;
+}
+
+/* Espacement amélioré */
+curriculumVitae > * {
+    margin-bottom: 20px;
+}
