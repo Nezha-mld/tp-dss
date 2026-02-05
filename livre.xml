@@ -2,17 +2,17 @@
 <livre>
     <titre>Introduction à la Programmation</titre>
     
-    <auteurs>
+    <!-- <auteurs>
         <auteur>
             <prenom>Nezha</prenom>
             <nom>Miloudi</nom>
             
         </auteur>
         <auteur>
-            <prenom>mmm</prenom>
-            <nom>nn</nom>
+            <prenom>ghalem</prenom>
+            <nom>serine</nom>
         </auteur>
-    </auteurs>
+    </auteurs> -->
     
     <chapitre>
         <titre>Chapitre 1 : Les Bases</titre>
@@ -49,6 +49,18 @@
         </section>
         
     </chapitre>
+     
+    <auteurs>
+        <auteur>
+            <prenom>Nezha</prenom>
+            <nom>Miloudi</nom>
+            
+        </auteur>
+        <auteur>
+            <prenom>ghalem</prenom>
+            <nom>serine</nom>
+        </auteur>
+    </auteurs>
     
 </livre>
 <!-- incomplete -->
