@@ -1,1 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<livre>
+    <titre>Introduction à la Programmation</titre>
+    
+    <auteurs>
+        <auteur>
+            <prenom>Nezha</prenom>
+            <nom>Miloudi</nom>
+        </auteur>
+        <auteur>
+            <prenom>Ahmed</prenom>
+            <nom>Bennani</nom>
+        </auteur>
+    </auteurs>
+    
+    <chapitre>
+        <titre>Chapitre 1 : Les Bases</titre>
+        
+        <section>
+            <titre>Section 1.1 : Variables et Types</titre>
+            <paragraphe>Les variables sont des conteneurs permettant de stocker des valeurs.</paragraphe>
+            <paragraphe>Chaque variable possède un type qui définit la nature des données.</paragraphe>
+        </section>
+        
+        <section>
+            <titre>Section 1.2 : Opérations et Expressions</titre>
+            <paragraphe>Les expressions permettent de calculer des valeurs à partir de variables.</paragraphe>
+            <paragraphe>Les opérateurs arithmétiques incluent +, -, *, et /.</paragraphe>
+            <paragraphe>Les opérateurs logiques permettent de combiner des conditions.</paragraphe>
+        </section>
+        
+    </chapitre>
+    
+    <chapitre>
+        <titre>Chapitre 2 : Structures de Contrôle</titre>
+        
+        <section>
+            <titre>Section 2.1 : Conditions</titre>
+            <paragraphe>Les instructions conditionnelles permettent d’exécuter du code selon une condition.</paragraphe>
+            <paragraphe>La structure if...else est la plus courante.</paragraphe>
+        </section>
+        
+        <section>
+            <titre>Section 2.2 : Boucles</titre>
+            <paragraphe>Les boucles permettent de répéter des instructions plusieurs fois.</paragraphe>
+            <paragraphe>La boucle for est utilisée quand le nombre d’itérations est connu.</paragraphe>
+            <paragraphe>La boucle while continue tant qu’une condition est vraie.</paragraphe>
+        </section>
+        
+    </chapitre>
+    
+</livre>
 
